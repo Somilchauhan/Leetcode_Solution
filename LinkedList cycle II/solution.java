@@ -9,7 +9,16 @@
  *     }
  * }
  */
-public class Solution {
+
+ class ListNode {
+      int val;
+      ListNode next;
+      ListNode(int x) {
+          val = x;
+          next = null;
+      }
+  }
+public class solution {
     public ListNode detectCycle(ListNode head) {
         if(head == null) return null;
         if(head.next == null) return head.next;
